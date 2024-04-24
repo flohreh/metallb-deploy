@@ -3,7 +3,7 @@ pipeline {
 
     environment {
         GITHUB_URL = 'https://github.com/flohreh/metallb-deploy.git'  // <---- Change this to match your cloned repository
-        KUBECONFIG = credentials('cit-flohreh')   // <---- Change this to match your kubernetes cluster credentials
+        KUBECONFIG = credentials('flohreh-lb')   // <---- Change this to match your kubernetes cluster credentials
     }
 
     stages {
